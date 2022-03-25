@@ -16,7 +16,9 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
+
 mongoose.connect("mongodb+srv://admin-kevin:KDS32@cluster0.pvkni.mongodb.net/DailyJournalDatabase", { useUnifiedTopology: true },{useNewUrlParser: true});
+
 
 const postSchema = {
   title: String,
@@ -74,6 +76,7 @@ app.get("/about", function(req, res){
 app.get("/contact", function(req, res){
   res.render("contact", {contactContent: contactContent});
 });
+
 
 
 
