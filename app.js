@@ -16,9 +16,9 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-<<<<<<< HEAD
+
 mongoose.connect("mongodb+srv://admin-kevin:KDS32@cluster0.pvkni.mongodb.net/DailyJournalDatabase", { useUnifiedTopology: true },{useNewUrlParser: true});
-=======
+
 
 mongoose.connect("mongodb+srv://admin-kevin:KDS32@cluster0.pvkni.mongodb.net/DailyJournalDatabase", { useUnifiedTopology: true },{useNewUrlParser: true});
 
