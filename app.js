@@ -16,7 +16,13 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
+<<<<<<< HEAD
 mongoose.connect("mongodb+srv://admin-kevin:KDS32@cluster0.pvkni.mongodb.net/DailyJournalDatabase", { useUnifiedTopology: true },{useNewUrlParser: true});
+=======
+
+mongoose.connect("mongodb+srv://admin-kevin:KDS32@cluster0.pvkni.mongodb.net/DailyJournalDatabase", { useUnifiedTopology: true },{useNewUrlParser: true});
+
+>>>>>>> 1b9465670bf12d05e5bc4c42b6f20853290933f7
 
 const postSchema = {
   title: String,
@@ -78,6 +84,10 @@ app.get("/contact", function(req, res){
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1b9465670bf12d05e5bc4c42b6f20853290933f7
 app.listen(process.env.PORT || 3000, function() {
   console.log("Server started on port 3000");
 });
